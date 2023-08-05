@@ -37,12 +37,12 @@ export default function Home() {
               <span className=" h-12 text-[#ed4956] text-5xl font-bold mt-4">
                 A
               </span>
-              <span className="text-4xl font-semibold">ditya.</span>
+              <span className="text-4xl text-white  font-semibold">ditya.</span>
             </div>
           </div>
-          <div className="flex h-20 w-1/2 items-end">
-            <div className="h-12 w-4/5 ml-14 cursor-pointer">
-              <ul className="flex justify-evenly items-center  h-12 cursor-pointer">
+          <div className="flex text-white h-20 w-1/2 items-end text-white">
+            <div className="h-12 w-4/5 ml-14 cursor-pointer text-white">
+              <ul className="flex justify-evenly items-center text-white  h-12 cursor-pointer">
                 <Link to={"homepage"} smooth={true}>
                   {" "}
                   <li style={{ cursor: "pointer" }}>Home</li>
@@ -70,8 +70,8 @@ export default function Home() {
         <div id="homepage" className="h-5/6 w-full flex ">
           <div className="h-5/6 w-1/2  flex items-end justify-end ">
             <div className="h-96 w-10/12  flex flex-col items-start justify-center">
-              <span className=" h-10 text-xl">UI/UX Designer</span>
-              <span className=" h-6 text-5xl font-semibold">
+              <span className=" h-10 text-xl text-white">UI/UX Designer</span>
+              <span className=" h-6 text-5xl font-semibold text-white">
                 Hi, I'm{" "}
                 <span className="text-[#ed4956] h-6 text-5xl font-semibold">
                   Aditya
@@ -95,10 +95,10 @@ export default function Home() {
         </div>
         <div className="h-full w-4/5 flex justify-center items-center">
           <div className="h-3/5 w-10/12">
-            <div className="h-1/6 p-4  flex items-center text-6xl font-semibold ">
+            <div className="h-1/6 p-4 text-white  flex items-center text-6xl font-semibold ">
               About Us
             </div>
-            <div className="h-3.5/6 p-3 w-full">
+            <div className="h-3.5/6 p-3 w-full text-white">
               Hello! I'm Aditya, a passionate and driven third-year Btech ECE
               student. My journey in the world of technology has been nothing
               short of thrilling. My insatiable curiosity and knack for quickly
@@ -113,11 +113,11 @@ export default function Home() {
               to grasp complex concepts and apply them in real-world scenarios
               has been instrumental in my academic achievements.
             </div>
-            <div className="h-10 w-1/2 flex justify-evenly p-5">
+            <div className=" text-white h-10 w-1/2 flex justify-evenly p-5">
               <ul className="flex h-10 w-full justify-between">
                 <li>
                   <button
-                    className="hover: font-bold transition duration-150 border-b-4 border-transparent hover:border-[#ed4956]"
+                    className="hover: font-bold transition duration-150 border-b-4 border-transparent text-white hover:border-[#ed4956]"
                     onClick={() => Setdata("Skills")}
                   >
                     Skills
@@ -125,7 +125,7 @@ export default function Home() {
                 </li>
                 <li>
                   <button
-                    className="hover: font-bold transition duration-150 border-b-4 border-transparent hover:border-[#ed4956]"
+                    className="hover: font-bold transition duration-150 border-b-4 border-transparent text-white hover:border-[#ed4956]"
                     onClick={() => Setdata("Experience")}
                   >
                     Experience
@@ -133,7 +133,7 @@ export default function Home() {
                 </li>
                 <li>
                   <button
-                    className="hover: font-bold transition duration-150 border-b-4 border-transparent hover:border-[#ed4956]"
+                    className="hover: font-bold transition duration-150 border-b-4 border-transparent text-white hover:border-[#ed4956]"
                     onClick={() => Setdata("Education")}
                   >
                     Education
@@ -146,15 +146,15 @@ export default function Home() {
                 <div className="h-full w-full p-2">
                   <ul>
                     <li className="text-sl font-bold text-[#ed4956]">UI/UX</li>
-                    <span className="text-xs">
+                    <span className="text-xs text-white">
                       Designing Web/App interfaces
                     </span>
                     <li className="text-sl font-bold text-[#ed4956]">
                       Web Development
                     </li>
-                    <span className="text-xs">Web App Development</span>
+                    <span className="text-xs text-white">Web App Development</span>
                     <li className="text-sl font-bold text-[#ed4956]">C++</li>
-                    <span className="text-xs">Intermediate</span>
+                    <span className="text-xs text-white">Intermediate</span>
                   </ul>
                 </div>
               )}
@@ -164,8 +164,8 @@ export default function Home() {
                     <li className="text-sl font-bold text-[#ed4956]">
                       AppZoTech Pvt Ltd
                     </li>
-                    <span className="text-xs">Internship</span>
-                    <p>Designed Web Pages At AppZoTech.com</p>
+                    <span className="text-xs text-white">Internship</span>
+                    <p className="text-white">Designed Web Pages At AppZoTech.com</p>
                   </ul>
                 </div>
               )}
@@ -175,11 +175,11 @@ export default function Home() {
                     <li className="text-sl font-bold text-[#ed4956]">
                       Graduation
                     </li>
-                    <p className="text-xs">2021-2025</p>
-                    <span className="text-sl">B.Tech ECE</span>
+                    <p className="text-xs text-white">2021-2025</p>
+                    <span className="text-sl text-white">B.Tech ECE</span>
                     <li className="text-sl font-bold text-[#ed4956]">School</li>
-                    <p className="text-xs">2009-2021</p>
-                    <span className="text-sl">
+                    <p className="text-xs text-white">2009-2021</p>
+                    <span className="text-sl text-white">
                       Kendriya Vidyalaya Faridabad,Harayana,India
                     </span>
                   </ul>
@@ -197,7 +197,7 @@ export default function Home() {
         <div className="h-3/4 w-full ">
           <div className="h-1/6 w-full flex items-center justify-center">
             <div className="h-full w-4/5">
-              <div className="h-full w-full text-6xl font-semibold flex items-center">
+              <div className="h-full w-full text-white text-6xl font-semibold flex items-center">
                 My Services
               </div>
             </div>
@@ -212,10 +212,10 @@ export default function Home() {
                 </div>
                 <div className="h-4/5 w-full flex justify-center">
                   <div className="h-full w-4/5 ">
-                    <div className="h-1/5 w-full  text-xl font-semibold flex items-center ">
+                    <div className="h-1/5 w-full text-white  text-xl font-semibold flex items-center ">
                       Responsive Web Design
                     </div>
-                    <div className="h-4/5 w-full text-xs font-semibold">
+                    <div className="h-4/5 w-full text-xs text-white font-semibold">
                       My skill lies in creating exceptional, responsive web
                       pages that captivate users across devices. I adeptly
                       combine design principles with coding expertise to ensure
@@ -236,10 +236,10 @@ export default function Home() {
                 </div>
                 <div className="h-4/5 w-full flex justify-center">
                   <div className="h-full w-4/5">
-                    <div className="h-1/5 w-full  text-xl font-semibold flex items-center">
+                    <div className="h-1/5 w-full text-white  text-xl font-semibold flex items-center">
                       Web development
                     </div>
-                    <div className="h-4/5 w-full  text-xs font-semibold">
+                    <div className="h-4/5 w-full text-white text-xs font-semibold">
                       Mastery in web development is my forte. Armed with a
                       diverse skill set, I proficiently navigate through various
                       programming languages, frameworks, and design principles.
@@ -260,10 +260,10 @@ export default function Home() {
                 </div>
                 <div className="h-4/5 w-full flex justify-center">
                   <div className="h-full w-4/5">
-                    <div className="h-1/5 w-full text-xl font-semibold flex items-center">
+                    <div className="h-1/5 w-full text-white text-xl font-semibold flex items-center">
                       UI/UX
                     </div>
-                    <div className="h-4/5 w-full  text-xs font-semibold">
+                    <div className="h-4/5 text-white w-full  text-xs font-semibold">
                       I possess a strong proficiency in UI/UX design, adeptly
                       creating interfaces that merge aesthetic appeal with
                       user-centric functionality. My meticulous attention to
@@ -287,7 +287,7 @@ export default function Home() {
         <div className="h-3/4 w-full ">
           <div className="h-1/6 w-full flex items-center justify-center">
             <div className="h-full w-4/5">
-              <div className="h-full w-full text-6xl font-semibold flex items-center">
+              <div className="h-full text-white w-full text-6xl font-semibold flex items-center">
                 My Project
               </div>
             </div>
@@ -302,10 +302,10 @@ export default function Home() {
                 </div>
                 <div className="h-4/5 w-full flex justify-center">
                   <div className="h-full w-4/5 ">
-                    <div className="h-1/5 w-full  text-xl font-semibold flex items-center ">
+                    <div className="h-1/5 w-full text-white text-xl font-semibold flex items-center ">
                       AppZoTech
                     </div>
-                    <div className="h-4/5 w-full text-xs font-semibold">
+                    <div className="h-4/5 w-full text-xs text-white font-semibold">
                       I played a pivotal role in designing web pages for various
                       websites, focusing on enhancing the responsiveness of
                       their service sections. My expertise primarily revolves
@@ -327,10 +327,10 @@ export default function Home() {
                 </div>
                 <div className="h-4/5 w-full flex justify-center">
                   <div className="h-full w-4/5">
-                    <div className="h-1/5 w-full  text-xl font-semibold flex items-center">
+                    <div className="h-1/5 w-full text-white  text-xl font-semibold flex items-center">
                       Netflix Clone
                     </div>
-                    <div className="h-4/5 w-full  text-xs font-semibold">
+                    <div className="h-4/5 w-full text-white  text-xs font-semibold">
                       I successfully developed a Netflix clone utilizing React,
                       Material UI, and custom CSS. By meticulously replicating
                       the design and functionality of the original Netflix
@@ -351,10 +351,10 @@ export default function Home() {
                 </div>
                 <div className="h-4/5 w-full flex justify-center">
                   <div className="h-full w-4/5">
-                    <div className="h-1/5 w-full text-xl font-semibold flex items-center">
+                    <div className="h-1/5 w-full text-white text-xl font-semibold flex items-center">
                       Spotify Clone
                     </div>
-                    <div className="h-4/5 w-full  text-xs font-semibold">
+                    <div className="h-4/5 w-full text-white  text-xs font-semibold">
                       I successfully crafted a near-identical clone of the
                       Spotify web application, allowing users to play songs
                       seamlessly. The design closely emulates the original,
@@ -379,14 +379,14 @@ export default function Home() {
           <div className="h-full w-full flex justify-center ">
             <div className="h-full w-4/5 flex">
               <div className="h-full w-2/5 ">
-                <div className="h-1/4 w-full flex items-center text-6xl font-semibold ">
+                <div className="h-1/4 w-full text-white flex items-center text-6xl font-semibold ">
                   Contact Me
                 </div>
                 <div className="h-20 w-full flex">
                   <div className="h-full w-11 flex items-center justify-center">
                     <AlternateEmailOutlinedIcon />
                   </div>
-                  <div className="h-full w-5/6 flex items-center justify-start">
+                  <div className="h-full text-white w-5/6 flex items-center justify-start">
                     <a href="mailto:aditya2955singh@gmail.com">
                       aditya2955singh@gmail.com
                     </a>
@@ -398,28 +398,28 @@ export default function Home() {
                   <div className="h-full w-11 flex  items-center justify-center ">
                     <CallIcon />
                   </div>
-                  <div className="h-full w-5/6 flex items-center justify-start">
+                  <div className="h-full w-5/6 flex text-white items-center justify-start">
                     <a href="tel:9667984036">9667984036</a>
                   </div>
                 </div>
                 <div className="h-16 w-full flex justify-start mt-8">
-                  <div className="h-full w-1/4 flex justify-between ml-3 item-end">
-                    <div>
+                  <div className="h-full w-1/4 flex justify-between ml-3 text-white item-end">
+                    <div  className="text-white">
                       <a href="https://www.linkedin.com/in/aditya-kumar-b17aa61ab/">
                         <LinkedInIcon sx={{ fontSize: "1.8rem" }} />
                       </a>
                     </div>
-                    <div>
+                    <div  className="text-white">
                       <a href="https://www.instagram.com/adityasingh______/">
                         <InstagramIcon sx={{ fontSize: "1.8rem" }} />
                       </a>
                     </div>
-                    <div>
+                    <div className="text-white">
                       <a href="https://www.facebook.com/profile.php?id=100044272484309">
                         <FacebookIcon sx={{ fontSize: "1.8rem" }} />
                       </a>
                     </div>
-                    <div>
+                    <div  className="text-white">
                       <a href="https://github.com/Aditya-Singh2955">
                         <GitHubIcon sx={{ fontSize: "1.8rem" }} />
                       </a>
