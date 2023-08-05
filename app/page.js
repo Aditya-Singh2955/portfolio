@@ -77,7 +77,7 @@ export default function Home() {
                   Aditya
                 </span>
               </span>
-              <span className="h-10 text-5xl font-semibold mt-7">
+              <span className="h-10 text-white text-5xl font-semibold mt-7">
                 Kumar from India
               </span>
             </div>
@@ -383,7 +383,7 @@ export default function Home() {
                   Contact Me
                 </div>
                 <div className="h-20 w-full flex">
-                  <div className="h-full w-11 flex items-center justify-center">
+                  <div className="h-full w-11 flex text-white items-center justify-center">
                     <AlternateEmailOutlinedIcon />
                   </div>
                   <div className="h-full text-white w-5/6 flex items-center justify-start">
@@ -395,7 +395,7 @@ export default function Home() {
                   <div></div>
                 </div>
                 <div className="h-20 w-full flex">
-                  <div className="h-full w-11 flex  items-center justify-center ">
+                  <div className="h-full w-11 flex text-white items-center justify-center ">
                     <CallIcon />
                   </div>
                   <div className="h-full w-5/6 flex text-white items-center justify-start">
