@@ -10,20 +10,27 @@ import SendIcon from "@mui/icons-material/Send";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import React, { useState } from "react";
 import NavigationIcon from "@mui/icons-material/Navigation";
-import { animateScroll as scroll,Link } from 'react-scroll';
-
+import { animateScroll as scroll, Link } from "react-scroll";
+import CircularProgress from "@mui/material/CircularProgress";
 
 export default function Home() {
   const [data, Setdata] = useState("Skills");
+  const [isLoading, setIsLoading] = useState(false);
+
   const onClickTop = () => {
     scroll.scrollToTop();
   };
-  
+  const onClickSend = () => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+      window.location.href = "/profile";
+    }, 8000);
+  };
 
   return (
     <main>
-      <div className="h-screen w-full bg-[url('../public/bg.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
-        
+      <div className="h-screen bg-black w-full bg-[url('../public/bg.png')] bg-no-repeat bg-center bg-cover overflow-hidden">
         <div className="h-20 w-full flex fixed 	">
           <div className="h-20 w-1/2  flex items-end  justify-end ">
             <div className="h-12 w-10/12  ">
@@ -81,7 +88,7 @@ export default function Home() {
 
       <div
         id="aboutpage"
-        className=" flex h-screen flex justify-center items-center overflow-hidden"
+        className=" flex bg-black h-screen flex justify-center items-center overflow-hidden"
       >
         <div className="h-full w-2/5  flex justify-end items-center">
           <div className="h-3/5 w-8/12 bg-[#363636] bg-[url('/what.jpg')] bg-no-repeat bg-center bg-cover "></div>
@@ -185,7 +192,7 @@ export default function Home() {
 
       <div
         id="servicespage"
-        className="h-screen w-full flex items-center justify-center overflow-hidden"
+        className="h-screen bg-black w-full flex items-center justify-center overflow-hidden"
       >
         <div className="h-3/4 w-full ">
           <div className="h-1/6 w-full flex items-center justify-center">
@@ -275,7 +282,7 @@ export default function Home() {
 
       <div
         id="projectpage"
-        className="h-screen w-full flex items-center justify-center overflow-hidden "
+        className="h-screen bg-black w-full flex items-center justify-center overflow-hidden "
       >
         <div className="h-3/4 w-full ">
           <div className="h-1/6 w-full flex items-center justify-center">
@@ -366,7 +373,7 @@ export default function Home() {
       </div>
       <div
         id="contactpage"
-        className="h-screen w-full flex items-center justify-center overflow-hidden "
+        className="h-screen bg-black w-full flex items-center justify-center overflow-hidden "
       >
         <div className="h-3/4 w-full">
           <div className="h-full w-full flex justify-center ">
@@ -380,9 +387,9 @@ export default function Home() {
                     <AlternateEmailOutlinedIcon />
                   </div>
                   <div className="h-full w-5/6 flex items-center justify-start">
-                  <a href="mailto:aditya2955singh@gmail.com">
-                 aditya2955singh@gmail.com
-                </a>
+                    <a href="mailto:aditya2955singh@gmail.com">
+                      aditya2955singh@gmail.com
+                    </a>
                   </div>
 
                   <div></div>
@@ -392,29 +399,29 @@ export default function Home() {
                     <CallIcon />
                   </div>
                   <div className="h-full w-5/6 flex items-center justify-start">
-                  <a href="tel:9667984036">9667984036</a>
+                    <a href="tel:9667984036">9667984036</a>
                   </div>
                 </div>
                 <div className="h-16 w-full flex justify-start mt-8">
                   <div className="h-full w-1/4 flex justify-between ml-3 item-end">
                     <div>
-                    <a href="https://www.linkedin.com/in/aditya-kumar-b17aa61ab/">
-                      <LinkedInIcon sx={{ fontSize: "1.8rem" }}  />
-                    </a>  
-                    </div>
-                    <div>
-                    <a href="https://www.instagram.com/adityasingh______/">
-                      <InstagramIcon sx={{ fontSize: "1.8rem" }} />
-                    </a>
-                    </div>
-                    <div>
-                    <a href="https://www.facebook.com/profile.php?id=100044272484309">
-                      <FacebookIcon sx={{ fontSize: "1.8rem" }} />
+                      <a href="https://www.linkedin.com/in/aditya-kumar-b17aa61ab/">
+                        <LinkedInIcon sx={{ fontSize: "1.8rem" }} />
                       </a>
                     </div>
                     <div>
-                    <a href="https://github.com/Aditya-Singh2955">
-                      <GitHubIcon sx={{ fontSize: "1.8rem" }} />
+                      <a href="https://www.instagram.com/adityasingh______/">
+                        <InstagramIcon sx={{ fontSize: "1.8rem" }} />
+                      </a>
+                    </div>
+                    <div>
+                      <a href="https://www.facebook.com/profile.php?id=100044272484309">
+                        <FacebookIcon sx={{ fontSize: "1.8rem" }} />
+                      </a>
+                    </div>
+                    <div>
+                      <a href="https://github.com/Aditya-Singh2955">
+                        <GitHubIcon sx={{ fontSize: "1.8rem" }} />
                       </a>
                     </div>
                   </div>
@@ -432,7 +439,11 @@ export default function Home() {
                       color: "white",
                       backgroundColor: "#363636",
                     }}
-                    style={{ hover: "1px solid white", color: "red", borderRadius:"10px" }}
+                    style={{
+                      hover: "1px solid white",
+                      color: "red",
+                      borderRadius: "10px",
+                    }}
                     InputLabelProps={{
                       style: { color: "#fff" },
                     }}
@@ -450,7 +461,11 @@ export default function Home() {
                     label="Enter your Name"
                     multiline
                     maxRows={4}
-                    sx={{ width: "100%", backgroundColor: "#363636", borderRadius:"10px" }}
+                    sx={{
+                      width: "100%",
+                      backgroundColor: "#363636",
+                      borderRadius: "10px",
+                    }}
                     style={{ borderColor: "white" }}
                     InputLabelProps={{
                       style: { color: "#fff" },
@@ -467,8 +482,11 @@ export default function Home() {
                     multiline
                     rows={4}
                     variant="outlined"
-                    
-                    sx={{ width: "100%", backgroundColor: "#363636" , borderRadius:"10px"}}
+                    sx={{
+                      width: "100%",
+                      backgroundColor: "#363636",
+                      borderRadius: "10px",
+                    }}
                     InputLabelProps={{
                       style: { color: "#fff" },
                     }}
@@ -479,20 +497,33 @@ export default function Home() {
                 </div>
                 <div className="h-1/6 w-full flex justify-center  items-center">
                   <Button
-                  onClick={() =>{ window.location.href="/profile"}}  
+                    onClick={() => onClickSend()}
                     style={{ backgroundColor: "#ed4956" }}
                     variant="contained"
-                    endIcon={<SendIcon />}
+                    endIcon={
+                      isLoading ? (
+                        <CircularProgress size={20} sx={{ color: "white" }} />
+                      ) : (
+                        <SendIcon />
+                      )
+                    }
                   >
-                    Send
+                    {isLoading ? " Loading..." : "Send"}
                   </Button>
-                  
                 </div>
               </div>
-              
             </div>
           </div>
-          <div className=" h-1/6 w-full flex justify-end items-end"><NavigationIcon onClick={()=>onClickTop()} style={{fontSize:"50px" , backgroundColor:"#ed4956", borderRadius:"50px"}}/></div>
+          <div className=" h-1/6 w-full flex justify-end items-end">
+            <NavigationIcon
+              onClick={() => onClickTop()}
+              style={{
+                fontSize: "50px",
+                backgroundColor: "#ed4956",
+                borderRadius: "50px",
+              }}
+            />
+          </div>
         </div>
       </div>
     </main>
